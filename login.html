@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - AP Coders</title>
+    <link rel="stylesheet" href="_css/login.css">
+</head>
+<body>
+
+    <header>
+      <div id="efect">
+        <div id="preloader6">
+          <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        </div>
+      </div>
+    </header>
+  
+      <main>
+          <div class="logo_app">
+            <img src="_img/logo_login.png" alt="">
+          </div>
+          <span class="linha"> </span>
+          <div id="login">
+              <form method="post" action=""> 
+                <p> 
+                  <label for="e-mail">Digite seu e-mail:</label>
+                  <input id="e-mail" name="e-mail" required="required" type="email" placeholder="digite aqui seu e-mail completo"/>
+                </p>
+                <p> 
+                  <label for="senha">Senha:</label>
+                  <input id="senha" name="senha" required="required" type="password" placeholder="digite aqui sua senha" /> 
+                </p>
+                <p>
+                  <p>Selecione a opção correta abaixo</p>
+                  <input type="radio" name="manterlogado" id="manterlogadoum" value="cadastrado" /> 
+                  <label for="manterlogado" id="cadastrado">Sou cadastrado</label>
+                  <div id="checkdireita" >
+                    <input type="radio" name="manterlogado" id="manterlogadodois" value="nao_cadastrado" />
+                    <label for="manterlogado" id="nao_cadastrado">Entrar sem cadastro</label>
+                  </div>
+                </p> 
+                <p> 
+                  <div id="entrar" >Entrar</div>
+                  <!-- <button id="entrar" >Entrar</button> -->
+                  <!-- <input type="submit" value="Entrar" />  -->
+                </p>
+                <p> 
+                  <input type="checkbox" name="manterlogado" id="manterlogado" value="" /> 
+                  <label for="manterlogado">Manter-me logado</label>
+                </p> 
+                <p class="link">
+                  Ainda não tem conta?
+                  <a href="_form_cadastro_membro.html" target="_self" rel="next">Cadastre-se</a>
+                </p>
+                
+              </form>
+            </div>
+      </main>
+      
+  </body>
+</html>
