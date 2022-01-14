@@ -87,6 +87,84 @@ body {
     border: 0px;
     padding-top: 40px;
 }
+
+/* ---------------------------- CARREGAMENTO DA PÁGINA ----------------------------- */
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+
+#preloader {
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:#273a49; /* cor do background que vai ocupar o body */
+    z-index:999; /* z-index para jogar para frente e sobrepor tudo */
+}
+#preloader .inner {
+    position: absolute;
+    top: 50%; /* centralizar a parte interna do preload (onde fica a animação)*/
+    left: 50%;
+    transform: translate(-50%, -50%);  
+}
+#txt_preloader {
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+}
+
+.bolas > div {
+  display: inline-block;
+  background-color: #fff;
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  margin: 3px;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-name: animarBola;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+   
+}
+.bolas > div:nth-child(1) {
+    animation-duration:0.75s ;
+    animation-delay: 0;
+}
+.bolas > div:nth-child(2) {
+    animation-duration: 0.75s ;
+    animation-delay: 0.12s;
+}
+.bolas > div:nth-child(3) {
+    animation-duration: 0.75s  ;
+    animation-delay: 0.24s;
+}
+
+
+ 
+@keyframes animarBola {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+  16% {
+    -webkit-transform: scale(0.1);
+    transform: scale(0.1);
+    opacity: 0.7;
+  }
+  33% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1; 
+  } 
+}
+/* end: Preloader */
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+/* -------------------------- FIM CARREGAMENTO PÁGINA --------------------------- */
+
+
 /* 
 .nome_igreja_topo {
     width: 520px;
@@ -226,7 +304,7 @@ input:not([type="radio"]){
     width: 330px!important;
     text-align: center;
     cursor: pointer;  
-    background: #0075cd;
+    background: #273a49;
     padding: 8px 5px;
     color: #fff;
     font-size: 20px;  
@@ -235,12 +313,14 @@ input:not([type="radio"]){
     text-shadow: 0 1px 1px #333;
     -webkit-border-radius: 5px;
     border-radius: 5px;
+    letter-spacing: 2px;
     transition: all 0.2s linear;
 }
    
   /*estilo do botão submit no hover */
 #entrar:hover{
-    background: #55b0f5;
+    background: #495864;
+    color: #d8f5f5;
 }
 #login{
     position: relative;
