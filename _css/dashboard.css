@@ -1,0 +1,202 @@
+@charset "UTF-8";
+
+/* ------------------------------------------------------------------- */
+/* REGRAS UNIVERSAL ABAIXO */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* CONFIGURAÇÕES UNIVERSAL ACIMA */
+/* ------------------------------------------------------------------- */
+#manterlogado {
+    position: relative;
+    background-color: #066a75;
+    width: 15px;
+}
+
+#manterlogadoum {
+    width: 22px;
+    height: 22px;
+}
+#manterlogadodois {
+    width: 22px;
+    height: 22px;
+}
+#checkdireita {
+    position: relative;
+    /* background-color: #0075cd; */
+    width: 180px;
+    float: right;
+
+    z-index: 10;
+}
+
+#efect {
+    position: relative;
+    width: 370px;
+    margin: auto;
+    /* left: 250px; */
+}
+
+#preloader6{
+    position:relative;
+	width: 42px;
+	height: 42px;
+	animation: preloader_6 5s infinite linear;
+}
+#preloader6 span{
+	width:20px;
+	height:20px;
+	position:absolute;
+	background:red;
+	display:block;
+	animation: preloader_6_span 1s infinite linear;
+}
+#preloader6 span:nth-child(1){
+background:#2ecc71;
+
+}
+#preloader6 span:nth-child(2){
+left:22px;
+background:#9b59b6;
+	animation-delay: .2s;
+
+}
+#preloader6 span:nth-child(3){
+top:22px;
+background:#3498db;
+	animation-delay: .4s;
+}
+#preloader6 span:nth-child(4){
+top:22px;
+left:22px;
+background:#f1c40f;
+	animation-delay: .6s;
+}
+@keyframes preloader_6_span {
+   0% { transform:scale(1); }
+   50% { transform:scale(0.5); }
+   100% { transform:scale(1); }
+}
+
+body {
+    background-image: url(../_imgs/backround.jpg);
+    background-repeat: initial;
+    width: 4000;
+    height: 100%;
+    border: 0px;
+    padding-top: 40px;
+}
+
+/* ---------------------------- CARREGAMENTO DA PÁGINA ----------------------------- */
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+
+#preloader {
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:#273a49; /* cor do background que vai ocupar o body */
+    z-index:999; /* z-index para jogar para frente e sobrepor tudo */
+}
+#preloader .inner {
+    position: absolute;
+    top: 50%; /* centralizar a parte interna do preload (onde fica a animação)*/
+    left: 50%;
+    transform: translate(-50%, -50%);  
+}
+#txt_preloader {
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+}
+
+.bolas > div {
+  display: inline-block;
+  background-color: #fff;
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  margin: 3px;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-name: animarBola;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+   
+}
+.bolas > div:nth-child(1) {
+    animation-duration:0.75s ;
+    animation-delay: 0;
+}
+.bolas > div:nth-child(2) {
+    animation-duration: 0.75s ;
+    animation-delay: 0.12s;
+}
+.bolas > div:nth-child(3) {
+    animation-duration: 0.75s  ;
+    animation-delay: 0.24s;
+}
+
+
+ 
+@keyframes animarBola {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+  16% {
+    -webkit-transform: scale(0.1);
+    transform: scale(0.1);
+    opacity: 0.7;
+  }
+  33% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1; 
+  } 
+}
+/* end: Preloader */
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+/* -------------------------- FIM CARREGAMENTO PÁGINA --------------------------- */
+
+
+header {
+    position: relative;
+    width: 960px;
+    top: 18px;
+    /* background-color: brown; */
+    /* top: 50%; centralizar a parte interna do preload (onde fica a animação) */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(206, 204, 204);
+    letter-spacing: 2px;
+    text-align: center;
+    transition: 1s;
+}
+
+#caractereLogado {
+    position: relative;
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+    /* font-weight: bolder; */
+}
+
+h6 {
+    position: relative;
+    top: 7px;
+    letter-spacing: 2px;
+}
+
+@media (max-width: 985px){
+    header {
+        width: 375px;
+    }
+}

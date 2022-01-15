@@ -32,7 +32,9 @@ function validaLogin() {
     console.log(`${user} ` + ` ${senha}`);
 
     if (user=='admin' & senha=='admin') {
-        window.confirm('Seja bem vindo usuário ' + ' Admin');
+        // window.confirm('Seja bem vindo usuário ' + ' Admin');
+        window.location.href = '../dashboard.html'
+
     }else {
         window.confirm('Usuário ou senha incorreto.  Digite Novamente!');
     }

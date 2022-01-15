@@ -11,6 +11,8 @@
 /* CONFIGURAÇÕES UNIVERSAL ACIMA */
 /* ------------------------------------------------------------------- */
 #manterlogado {
+    position: relative;
+    background-color: #066a75;
     width: 15px;
 }
 
@@ -189,6 +191,8 @@ body {
     margin-top: 30px;
 }
 
+
+
 .user{
     width: 280px;
     height: 80px;
@@ -301,6 +305,10 @@ input:not([type="radio"]){
    
   /*estilo do botão submit */
 #entrar {
+    position: relative;
+    margin: auto;
+    left: -8px;
+    top: 100px;
     width: 330px!important;
     text-align: center;
     cursor: pointer;  
@@ -329,6 +337,17 @@ input:not([type="radio"]){
     margin: auto;
 
 }
+
+#radManterLogado{
+    position: relative;
+    top: 100px;
+    /* background-color: #f1c40f; */
+    width: 200px;
+    margin: auto;
+    left: 20px;
+    
+}
+
 select{
     width: 100%;  
     height: 35px;
