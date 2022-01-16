@@ -85,7 +85,6 @@ body {
     background-image: url(../_imgs/backround.jpg);
     background-repeat: initial;
     width: 4000;
-    height: 100%;
     border: 0px;
     padding-top: 40px;
 }
@@ -169,7 +168,7 @@ body {
 
 header {
     position: relative;
-    width: 960px;
+    width: 900px;
     top: 18px;
     /* background-color: brown; */
     /* top: 50%; centralizar a parte interna do preload (onde fica a animação) */
@@ -179,15 +178,45 @@ header {
     color: rgb(206, 204, 204);
     letter-spacing: 2px;
     text-align: center;
+    z-index: 10;
     transition: 1s;
 }
 
+
+#nomeEmpresa {
+    position: relative;
+    /* background-color: cornsilk; */
+    width: 250px;
+    height: 36px;
+    margin: auto;
+    z-index: 10;
+}
 #caractereLogado {
     position: relative;
     color: rgb(255, 255, 255);
     text-decoration: underline;
     /* font-weight: bolder; */
 }
+#logado {
+    position: relative;
+    width: 280px;
+    height: 50px;
+    float: right;
+    top: -52px;
+    right: 0px;
+    /* background-color: darkcyan; */
+    z-index: 10;
+}
+#superiorLogado {
+    position: relative;
+    width: 20px;
+    height: 29px;
+    margin: auto;
+    z-index: 10;
+}
+
+
+
 
 h6 {
     position: relative;
@@ -195,8 +224,336 @@ h6 {
     letter-spacing: 2px;
 }
 
-@media (max-width: 985px){
+#conteudoPrincipal {
+    position: relative;
+    top: 5px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 900px;
+    height: 640px;
+    background-color: #fff;
+    z-index: 20;
+}
+
+#backgroundMenus {
+    position: relative;
+    top: 8px;
+    left: 8px;
+    width: 90px;
+    height: 500px;
+    background-color: #f7f3f3;
+    border: solid 1px #dddcdc;
+    z-index: 30;
+}
+
+#menuPrincipalP {
+    position: relative;
+    top: 8px;
+    width: 70px;
+    height: 70px;
+    margin: auto;
+    background-color: #f7f3f3;
+    border: solid 1px #dddcdc;
+    z-index: 40;
+}
+#menuPrincipalP:hover {
+    background-color: #eceaea;
+}
+#menuPinicio {
+    position: relative;
+    top: 10px;
+    left: 19px;
+    z-index: 52;
+}
+
+#menuUnidadesP {
+    position: relative;
+    top: 8px;
+    width: 70px;
+    height: 70px;
+    margin: auto;
+    background-color: #f7f3f3;
+    border: solid 1px #dddcdc;
+    z-index: 40;
+}
+#menuUnidadesP:hover {
+    background-color: #eceaea;
+}
+#menuPunidades {
+    position: relative;
+    top: 10px;
+    left: 10px;
+    z-index: 52;
+}
+
+#menuRelatoriosP {
+    position: relative;
+    top: 8px;
+    width: 70px;
+    height: 70px;
+    margin: auto;
+    background-color: #f7f3f3;
+    border: solid 1px #dddcdc;
+    z-index: 40;
+}
+#menuRelatoriosP:hover {
+    background-color: #eceaea;
+}
+#menuPrelatorios {
+    position: relative;
+    top: 10px;
+    left: 3px;
+    z-index: 52;
+}
+#menuPsair {
+    position: relative;
+    top: 24px;
+    left: -20px;
+    z-index: 52;
+}
+
+#imgPrincipal {
+    position: relative;
+    left: 50%;
+    height: 50%;
+    transform: translate(-50%, 30%);
+    text-align: center;
+    z-index: 50;
+}
+
+.menusLateral {
+    position: relative;
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #000;
+    font-size: 8px;
+}
+.menusLateral:hover {
+    color: #1a6dc3;
+}
+
+#apControle {
+    position: relative;
+    left: 110px;
+    top: -490px;
+    width: 760px;
+    height: 60px;
+    /* background-color: brown; */
+    z-index: 50;
+}
+
+#imageApControle {
+    position: relative;
+    top: 4px;
+    left: 5px;
+    width: 50px;
+    height: 50px;
+    /* background-color: #fff; */
+    z-index: 50;
+}
+
+#txtApControle {
+    position: relative;
+    top: -46px;
+    left: 60px;
+    width: 690px;
+    height: 50px;
+    letter-spacing: 1px;
+    color: #1861af;
+    /* background-color: rgb(194, 207, 12); */
+    padding-top: 20px;
+    /* padding-left: 12px; */
+    z-index: 50;
+}
+
+#menuGunidades {
+    position: relative;
+    left: 120px;
+    top: -490px;
+    width: 230px;
+    height: 260px;
+    background-color: #f7f3f3;
+    border: solid 1px #dddcdc;
+    z-index: 60;
+}
+#menuGunidades:hover {
+    background-color: #eceaea;
+    color: #1a6dc3;
+}
+
+#iconGunidades {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    z-index: 60;
+}
+
+#txtMenuGunidades {
+    position: relative;
+    top: 20px;
+    left: 4px;
+    padding-left: 20px;
+    width: 220px;
+    height: 130px;
+    /* background-color: aqua; */
+    z-index: 60;
+}
+
+#espaceTopunidades {
+    position: relative;
+    top: 8px;
+    z-index: 60;
+}
+
+#setaMenuGunidades {
+    position: relative;
+    width: 140px;
+    height: 240px;
+    /* background-color: brown; */
+    padding-top: 160px;
+    top: -152px;
+    left: 0px;
+    z-index: 58;
+    transition: 2s;
+}
+#setaMenuGunidades:hover {
+    left: 60px;
+}
+
+#linkMenuGinicio {
+    position: relative;
+    text-decoration: none;
+    color: #000;
+    /* background-color: darkorange; */
+    z-index: 58;
+}
+#linkMenuGinquilinos {
+    position: relative;
+    text-decoration: none;
+    color: #000;
+    /* background-color: darkorange; */
+    z-index: 58;
+}
+#linkGmenurelatorios {
+    position: relative;
+    text-decoration: none;
+    color: #000;
+    /* background-color: darkorange; */
+    z-index: 58;
+}
+
+#unidadesCadastradas {
+    position: relative;
+    top: -188px;
+    width: 200px;
+    height: 30px;
+    color: #000;
+    /* background-color: cornflowerblue; */
+    z-index: 60;
+}
+#unidadesCadastradasUm {
+    position: relative;
+    width: 140px;
+    height: 16px;
+    /* background-color: cornflowerblue; */
+    top: -34px;
+    left: 20px;
+    letter-spacing: 1px;
+    z-index: 60;
+}
+
+#menuGinquilinos {
+    position: relative;
+    left: 360px;
+    top: -750px;
+    width: 230px;
+    height: 260px;
+    background-color: #f7f3f3;
+    border: solid 1px #dddcdc;
+    z-index: 60;
+}
+#menuGinquilinos:hover {
+    background-color: #eceaea;
+    color: #1a6dc3;
+}
+
+#menuGrelatorios {
+    position: relative;
+    left: 600px;
+    top: -1010px;
+    width: 230px;
+    height: 260px;
+    background-color: #f7f3f3;
+    border: solid 1px #dddcdc;
+    z-index: 60;
+}
+#menuGrelatorios:hover {
+    background-color: #eceaea;
+    color: #1a6dc3;
+}
+#txtMenuRelatorios {
+    position: relative;
+    top: 20px;
+    left: 4px;
+    padding-left: 6px;
+    width: 220px;
+    height: 130px;
+    /* background-color: aqua; */
+    z-index: 60;
+}
+#espaceTopunidades {
+    position: relative;
+    top: 8px;
+    z-index: 60;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 975px){
+
     header {
         width: 375px;
     }
+
+    #logado {
+        display: none;
+    }
+
+    #conteudoPrincipal {
+        width: 375px;
+        height: 950px;
+    }
+
+    #apControle {
+        width: 260px;
+    }
+
+    #txtApControle {
+        width: 190px;
+    }
+
+    #menuGinquilinos {
+        position: relative;
+        top: -470px;
+        left: 120px;
+        z-index: 60;
+    }
+
+    #menuGrelatorios {
+        position: relative;
+        top: -450px;
+        left: 120px;
+        z-index: 60;
+    }
+
+
+
 }
