@@ -380,15 +380,6 @@ h6 {
     z-index: 50;
 }
 
-#imageTituloDashBoard {
-    position: relative;
-    top: -538px;
-    float: right;
-    width: 528px;
-    height: 39px;
-    z-index: 52;
-}
-
 #menuGunidades {
     position: relative;
     left: 120px;
@@ -428,7 +419,7 @@ h6 {
     z-index: 60;
 }
 
-.setaMenuGunidades {
+#setaMenuGunidades {
     position: relative;
     width: 140px;
     height: 240px;
@@ -439,64 +430,7 @@ h6 {
     z-index: 58;
     transition: 2s;
 }
-.setaMenuGunidades:hover {
-    left: 60px;
-}
-
-#imageAddUm {
-    position: relative;
-    top: -220px;
-    left: 148px;
-    width: 45px;
-    height: 49px;
-    /* background-color: darkorange; */
-    z-index: 60;
-}
-#imageAddDois {
-    position: relative;
-    top: 20px;
-    left: 148px;
-    width: 45px;
-    height: 49px;
-    /* background-color: darkorange; */
-    z-index: 60;
-}
-#imageAddTres {
-    position: relative;
-    top: 20px;
-    left: 160px;
-    width: 45px;
-    height: 49px;
-    /* background-color: darkorange; */
-    z-index: 60;
-}
-
-#setaMenuGinquilinos {
-    position: relative;
-    width: 140px;
-    height: 240px;
-    /* background-color: brown; */
-    padding-top: 160px;
-    top: -202px;
-    left: 0px;
-    z-index: 58;
-    transition: 2s;
-}
-#setaMenuGinquilinos:hover {
-    left: 60px;
-}
-#setaMenuGrelatorios {
-    position: relative;
-    width: 140px;
-    height: 240px;
-    /* background-color: brown; */
-    padding-top: 160px;
-    top: -202px;
-    left: 0px;
-    z-index: 58;
-    transition: 2s;
-}
-#setaMenuGrelatorios:hover {
+#setaMenuGunidades:hover {
     left: 60px;
 }
 
@@ -522,17 +456,16 @@ h6 {
     z-index: 58;
 }
 
-.unidadesCadastradas {
+#unidadesCadastradas {
     position: relative;
-    top: -232px;
-    left: -10px;
+    top: -188px;
     width: 200px;
     height: 30px;
     color: #000;
     /* background-color: cornflowerblue; */
     z-index: 60;
 }
-.titulosRelatorios {
+#unidadesCadastradasUm {
     position: relative;
     width: 140px;
     height: 16px;
@@ -540,16 +473,6 @@ h6 {
     top: -34px;
     left: 20px;
     letter-spacing: 1px;
-    z-index: 60;
-}
-#relatoriosGerados {
-    position: relative;
-    top: -232px;
-    left: 6px;
-    width: 200px;
-    height: 30px;
-    color: #000;
-    /* background-color: cornflowerblue; */
     z-index: 60;
 }
 
@@ -628,10 +551,6 @@ h6 {
 
     #txtApControle {
         width: 190px;
-    }
-
-    #imageTituloDashBoard {
-        display: none;
     }
 
     #menuGinquilinos {
