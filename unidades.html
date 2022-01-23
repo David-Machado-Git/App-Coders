@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Condomínios - Área interna - APP Coders</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./_css/unidades.css">
+</head>
+<body>
+
+    <!-- início do preloader -->
+    <div id="preloader">
+        <div class="inner">
+            <div class="bolas">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <span id="txt_preloader">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Aguarde </span><br>
+            <span id="txt_preloader">Carregando APP !... </span>
+        </div>
+    </div>
+    <!-- fim do preloader -->
+
+    <header>
+
+        <div id="nomeEmpresa" >
+            <h2>APP CODERS</h2>
+            <!-- <h4>Administrando seu condomínio</h4> -->
+            <!-- <h6>Você está logado com usuário:<span id="caractereLogado">Administrador</span></h6> -->
+        </div>
+
+        <div id="logado" >
+
+            <div id="superiorLogado" >
+                <img src="./_imgs/cadeado_logado.png" alt="Logado ao sistema">
+            </div>
+
+            <div id="logadoInferior" >
+                <h6>Logado com: ADMINISTRADOR</h6>
+            </div>
+
+        </div>
+
+
+    </header>
+
+    <main>
+
+        <div id="conteudoPrincipal">
+            
+            <div id="backgroundMenus" >
+
+                <div id="menuPrincipalP" >
+                    <a class="menusLateral" href="./dashboard.html"><img id="imgPrincipal" src="./_imgs/icon_p_inicio.png" alt="Menu principal"><span id="menuPinicio" >INÍCIO</span></a>
+                </div>
+
+                <div id="menuUnidadesP" >
+                    <a class="menusLateral" href="./unidades.html"><img id="imgPrincipal" src="./_imgs/icon_p_unidades.png" alt="Menu principal"><span id="menuPunidades" >UNIDADES</span></a>
+                </div>
+
+                <div id="menuRelatoriosP" >
+                    <a class="menusLateral" href="#"><img id="imgPrincipal" src="./_imgs/icon_p_inquilinos.png" alt="Menu principal"><span id="menuPrelatorios" >INQUILINOS</span></a>
+                </div> 
+
+                <div id="menuRelatoriosP" >
+                    <a class="menusLateral" href="#"><img id="imgPrincipal" src="./_imgs/icon_p_relatorios.png" alt="Menu principal"><span id="menuPrelatorios" >RELATÓRIOS</span></a>
+                </div>  
+
+                <div id="menuSairP" >
+                    <a class="menusLateral" href="./login.html"><img id="imgPrincipal" src="./_imgs/icon_p_sair.png" alt="Menu principal"><span id="menuPsair" >SAIR</span></a>
+                </div>            
+
+            </div>
+
+            <div id="apControle" >
+
+                <div id="imageApControle" >
+                    <img src="./_imgs/img_logado.png" alt="">
+                </div>
+
+                <div id="txtApControle" >
+                    <h3>AP CONTROLE</h3>
+                </div>
+
+            </div>
+
+            <div id="imageTituloPg" >
+                <img src="_imgs/img_titulo_cadastro_unidades.png" >
+            </div>
+
+            <div id="conteudoFormulario">
+
+                <div id="formularioUnidade" >
+
+                    <!-- <h3>INSIRA AS INFORMAÇÕES ABAIXO </h3><br> -->
+                        <form method="post" action="">
+                          <p>
+                            <label for="sus">Data do Cadastro:*</label><br>
+                            <input id="dataCadastro" name="dataCadastro" required="required" type="date"/> 
+                          </p>
+                          <p> 
+                            <label for="e-mail">Nome do Condomínio:*</label>
+                            <input id="cpf" name="text" required="required" type="text" placeholder="digite aqui o nome do condomínio *"/>
+                          </p>        
+                            <p> 
+                              <label for="e-mail">Nome do Proprietário:*</label>
+                              <input id="cpf" name="text" required="required" type="text" placeholder="digite aqui o nome do condomínio *"/>
+                            </p>
+                            <p>
+                              <label for="Estado UF">Estado (UF):*</label><br>
+                              <select id="estado" name="estado" class="estado">
+                                <option value="Santa Catarina">Santa Catarina</option>
+                                <option value="Paraná">Paraná</option>
+                                <option value="Rio Grande do Sul">Rio Grande do Sul</option>
+                                <option value="São Paulo">São Paulo</option>
+                              </select> 
+                            </p>
+                            <p>
+                              <label for="Estado UF">Município:*</label><br>
+                              <select id="municipio" name="estado" class="estado">
+                                <option value="Santa Catarina">Blumenau</option>
+                                <option value="Paraná">Gaspar</option>
+                                <option value="Rio Grande do Sul">Indaial</option>
+                                <option value="São Paulo">Timbó</option>
+                              </select> 
+                            </p>
+                            <p> 
+                              <label for="cep">CEP:*</label><br>
+                              <input id="cep" name="cep" required="required" type="number" placeholder="digite aqui seu cep  *" /> 
+                            </p>
+                            <p> 
+                              <label for="bairro">Bairro:*</label><br>
+                              <input id="bairro" name="bairro" required="required" type="text" placeholder="digite aqui o nome do seu bairro  *" /> 
+                            </p>
+                            <p> 
+                              <label for="endereco">Endereço:*</label><br>
+                              <input id="endereco" name="endereco" required="required" type="text" placeholder="digite aqui seu endereço  *" /> 
+                            </p>
+                            <p> 
+                              <label for="numero">Número:</label><br>
+                              <input id="numero" name="numero" required="required" type="number" placeholder="digite aqui o número de sua residência " /> 
+                            </p>
+                            <p> 
+                              <label for="numero">Complemento:</label><br>
+                              <input id="numero" name="numero" required="required" type="number" placeholder="digite aqui complementos ou referências de sua residência " /> 
+                            </p>
+            
+                          <br>
+                          <div id="blocoFinal" >                            
+                            <p> 
+                              <div id="cadastrar" >Concluir</div>
+                            </p><br><br>
+                          </div>
+                          
+                        </form>
+
+            </div>
+                
+                
+            
+
+
+        </div>
+
+    </main>
+
+
+    <script src="./_scripts/dashboard.js"></script>
+</body>
+</html>

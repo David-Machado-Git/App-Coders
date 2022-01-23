@@ -243,7 +243,7 @@ h6 {
     height: 500px;
     background-color: #f7f3f3;
     border: solid 1px #dddcdc;
-    z-index: 30;
+    z-index: 20;
 }
 
 #menuPrincipalP {
@@ -252,9 +252,9 @@ h6 {
     width: 70px;
     height: 70px;
     margin: auto;
-    background-color: #f7f3f3;
+    background-color: #f4f3f7;
     border: solid 1px #dddcdc;
-    z-index: 40;
+    z-index: 20;
 }
 #menuPrincipalP:hover {
     background-color: #eceaea;
@@ -263,7 +263,7 @@ h6 {
     position: relative;
     top: 10px;
     left: 19px;
-    z-index: 52;
+    z-index: 20;
 }
 
 #menuUnidadesP {
@@ -274,7 +274,7 @@ h6 {
     margin: auto;
     background-color: #f7f3f3;
     border: solid 1px #dddcdc;
-    z-index: 40;
+    z-index: 20;
 }
 #menuUnidadesP:hover {
     background-color: #eceaea;
@@ -283,7 +283,7 @@ h6 {
     position: relative;
     top: 10px;
     left: 10px;
-    z-index: 52;
+    z-index: 20;
 }
 
 #menuRelatoriosP {
@@ -294,7 +294,7 @@ h6 {
     margin: auto;
     background-color: #f7f3f3;
     border: solid 1px #dddcdc;
-    z-index: 40;
+    z-index: 20;
 }
 #menuSairP {
     position: relative;
@@ -304,7 +304,7 @@ h6 {
     margin: auto;
     background-color: #f7f3f3;
     border: solid 1px #dddcdc;
-    z-index: 40;
+    z-index: 20;
 }
 #menuSairP:hover {
     background-color: #eceaea;
@@ -316,13 +316,13 @@ h6 {
     position: relative;
     top: 10px;
     left: 3px;
-    z-index: 52;
+    z-index: 20;
 }
 #menuPsair {
     position: relative;
     top: 24px;
     left: -20px;
-    z-index: 52;
+    z-index: 20;
 }
 
 #imgPrincipal {
@@ -331,7 +331,7 @@ h6 {
     height: 50%;
     transform: translate(-50%, 30%);
     text-align: center;
-    z-index: 50;
+    z-index: 20;
 }
 
 .menusLateral {
@@ -341,29 +341,32 @@ h6 {
     letter-spacing: 1px;
     color: #000;
     font-size: 8px;
+    z-index: 20;
 }
 .menusLateral:hover {
     color: #1a6dc3;
 }
 
 #apControle {
-    position: relative;
+    /* display: none; */
+    position: absolute;
     left: 110px;
-    top: -490px;
+    top: 10px;
     width: 760px;
     height: 60px;
     /* background-color: brown; */
-    z-index: 50;
+    z-index: 20;
 }
 
 #imageApControle {
+    /* display: none; */
     position: relative;
     top: 4px;
     left: 5px;
     width: 50px;
     height: 50px;
     /* background-color: #fff; */
-    z-index: 50;
+    z-index: 20;
 }
 
 #txtApControle {
@@ -377,25 +380,47 @@ h6 {
     /* background-color: rgb(194, 207, 12); */
     padding-top: 20px;
     /* padding-left: 12px; */
-    z-index: 50;
+    z-index: 20;
+}
+
+#imageTituloPg {
+    /* display: none; */
+    position: absolute;
+    top: 24px;
+    left: 406px;
+    width: 528px;
+    height: 39px;
+    z-index: 20;
+}
+#imageTituloDashBoard {
+    /* display: none; */
+    position: absolute;
+    top: 24px;
+    left: 372px;
+    width: 528px;
+    height: 39px;
+    z-index: 20;
 }
 
 #menuGunidades {
-    position: relative;
+    /* display: none; */
+    position: absolute;
     left: 120px;
-    top: -490px;
+    top: 80px;
     width: 230px;
     height: 260px;
     background-color: #f7f3f3;
     border: solid 1px #dddcdc;
-    z-index: 60;
+    z-index: 20;
 }
 #menuGunidades:hover {
+    /* display: none; */
     background-color: #eceaea;
     color: #1a6dc3;
 }
 
 #iconGunidades {
+    /* display: none; */
     position: relative;
     top: 20px;
     left: 20px;
@@ -403,6 +428,7 @@ h6 {
 }
 
 #txtMenuGunidades {
+    /* display: none; */
     position: relative;
     top: 20px;
     left: 4px;
@@ -414,12 +440,14 @@ h6 {
 }
 
 #espaceTopunidades {
+    /* display: none; */
     position: relative;
     top: 8px;
     z-index: 60;
 }
 
-#setaMenuGunidades {
+.setaMenuGunidades {
+    /* display: none; */
     position: relative;
     width: 140px;
     height: 240px;
@@ -430,11 +458,77 @@ h6 {
     z-index: 58;
     transition: 2s;
 }
-#setaMenuGunidades:hover {
+.setaMenuGunidades:hover {
+    /* display: none; */
+    left: 60px;
+}
+
+#imageAddUm {
+    /* display: none; */
+    position: relative;
+    top: -220px;
+    left: 148px;
+    width: 45px;
+    height: 49px;
+    /* background-color: darkorange; */
+    z-index: 60;
+}
+#imageAddDois {
+    /* display: none; */
+    position: relative;
+    top: 20px;
+    left: 148px;
+    width: 45px;
+    height: 49px;
+    /* background-color: darkorange; */
+    z-index: 60;
+}
+#imageAddTres {
+    /* display: none; */
+    position: relative;
+    top: 20px;
+    left: 160px;
+    width: 45px;
+    height: 49px;
+    /* background-color: darkorange; */
+    z-index: 60;
+}
+
+#setaMenuGinquilinos {
+    /* display: none; */
+    position: relative;
+    width: 140px;
+    height: 240px;
+    /* background-color: brown; */
+    padding-top: 160px;
+    top: -202px;
+    left: 0px;
+    z-index: 58;
+    transition: 2s;
+}
+#setaMenuGinquilinos:hover {
+    /* display: none; */
+    left: 60px;
+}
+#setaMenuGrelatorios {
+    /* display: none; */
+    position: relative;
+    width: 140px;
+    height: 240px;
+    /* background-color: brown; */
+    padding-top: 160px;
+    top: -202px;
+    left: 0px;
+    z-index: 58;
+    transition: 2s;
+}
+#setaMenuGrelatorios:hover {
+    /* display: none; */
     left: 60px;
 }
 
 #linkMenuGinicio {
+    /* display: none; */
     position: relative;
     text-decoration: none;
     color: #000;
@@ -442,6 +536,7 @@ h6 {
     z-index: 58;
 }
 #linkMenuGinquilinos {
+    /* display: none; */
     position: relative;
     text-decoration: none;
     color: #000;
@@ -449,6 +544,7 @@ h6 {
     z-index: 58;
 }
 #linkGmenurelatorios {
+    /* display: none; */
     position: relative;
     text-decoration: none;
     color: #000;
@@ -456,16 +552,19 @@ h6 {
     z-index: 58;
 }
 
-#unidadesCadastradas {
+.unidadesCadastradas {
+    /* display: none; */
     position: relative;
-    top: -188px;
+    top: -232px;
+    left: -10px;
     width: 200px;
     height: 30px;
     color: #000;
     /* background-color: cornflowerblue; */
     z-index: 60;
 }
-#unidadesCadastradasUm {
+.titulosRelatorios {
+    /* display: none; */
     position: relative;
     width: 140px;
     height: 16px;
@@ -475,11 +574,23 @@ h6 {
     letter-spacing: 1px;
     z-index: 60;
 }
+#relatoriosGerados {
+    /* display: none; */
+    position: relative;
+    top: -232px;
+    left: 6px;
+    width: 200px;
+    height: 30px;
+    color: #000;
+    /* background-color: cornflowerblue; */
+    z-index: 60;
+}
 
 #menuGinquilinos {
-    position: relative;
-    left: 360px;
-    top: -750px;
+    /* display: none; */
+    position: absolute;
+    left: 382px;
+    top: 80px;
     width: 230px;
     height: 260px;
     background-color: #f7f3f3;
@@ -487,14 +598,16 @@ h6 {
     z-index: 60;
 }
 #menuGinquilinos:hover {
+    /* display: none; */
     background-color: #eceaea;
     color: #1a6dc3;
 }
 
 #menuGrelatorios {
-    position: relative;
-    left: 600px;
-    top: -1010px;
+    /* display: none; */
+    position: absolute;
+    left: 646px;
+    top: 80px;
     width: 230px;
     height: 260px;
     background-color: #f7f3f3;
@@ -502,10 +615,12 @@ h6 {
     z-index: 60;
 }
 #menuGrelatorios:hover {
+    /* display: none; */
     background-color: #eceaea;
     color: #1a6dc3;
 }
 #txtMenuRelatorios {
+    /* display: none; */
     position: relative;
     top: 20px;
     left: 4px;
@@ -516,6 +631,7 @@ h6 {
     z-index: 60;
 }
 #espaceTopunidades {
+    /* display: none; */
     position: relative;
     top: 8px;
     z-index: 60;
@@ -523,10 +639,44 @@ h6 {
 
 
 
+#tituloGrafico {
+    /* display: none; */
+    position: absolute;
+    top: 360px;
+    left: 98px;
+    z-index: 70;
+}
+
+#imgGrafico {
+    /* display: none; */
+    position: absolute;
+    top: 400px;
+    left: 260px;
+
+    z-index: 80;
+}
+
+#dashBoard {
+    width: 380px;
+    /* height: 200px; */
+}
+
+#conteudoFormulario {
+    position: absolute;
+    top: 80px;
+    left: 120px;
+    width: 760px;
+    height: 450px;
+    background-color: aqua;
+    z-index: 80;
+}
+
+/* Daqui pra baixo */
 
 
 
 
+/* Daqui pra cima */
 
 
 
@@ -542,7 +692,7 @@ h6 {
 
     #conteudoPrincipal {
         width: 375px;
-        height: 950px;
+        height: 900px;
     }
 
     #apControle {
@@ -553,18 +703,41 @@ h6 {
         width: 190px;
     }
 
-    #menuGinquilinos {
-        position: relative;
-        top: -470px;
+    #imageTituloDashBoard {
+        display: none;
+    }
+
+    #menuGunidades {
+        /* position: relative; */
+        top: 70px;
         left: 120px;
-        z-index: 60;
+        z-index: 20;
+    }
+
+    #menuGinquilinos {
+        /* display: none; */
+        /* position: relative; */
+        top: 338px;
+        left: 120px;
+        z-index: 20;
     }
 
     #menuGrelatorios {
-        position: relative;
-        top: -450px;
+        /* display: none; */
+        /* position: relative; */
+        top: 607px;
         left: 120px;
-        z-index: 60;
+        z-index: 20;
+    }
+
+
+    #tituloGrafico {
+        display: none;
+    }
+
+
+    #imgGrafico {
+        display: none;
     }
 
 
